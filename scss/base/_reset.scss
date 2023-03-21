@@ -1,0 +1,29 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(70, 65, 65);
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.2em;}
+ul{list-style: none;
+padding: 0;}
+a{text-decoration: none;}
+
+.idenea{color: rgba(51, 216, 51, 0.89);}
+.fit{color: rgba(238, 44, 44, 0.719);}
+

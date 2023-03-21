@@ -1,0 +1,14 @@
+.nuestra-vi{
+    font-weight: bold;
+    padding: 50px 40px;
+    max-width: 100%;
+
+    .nuestra-imagen{
+        background-image: url(../recursos/imagenes/vision.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 160px;
+        max-width: 100%;
+    }
+}

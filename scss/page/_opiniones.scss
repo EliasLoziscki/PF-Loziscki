@@ -1,0 +1,16 @@
+.opiniones-titulos{
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.container{
+    padding: 50px 20px;
+    .card{
+        margin: 20px;
+        box-shadow: 5px 5px 10px;
+        .card-text{
+            font-family: 'Dancing Script', cursive;
+        }
+    }
+}
+

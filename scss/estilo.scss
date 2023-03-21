@@ -1,0 +1,32 @@
+//variables
+@import "utilities/variables";
+
+
+/*reset*/
+@import "base/reset";
+
+/*comienza navbar*/
+@import "layout/navbar";
+/*finaliza navbar*/
+
+/*Hero*/
+@import "layout/header";
+
+/*section*/
+@import "layout/section";
+
+/*footer con gridd*/
+@import "layout/footer";
+
+/*nuestra-vision*/
+@import "page/nuestra-vision";
+
+/*opiniones*/
+@import "page/opiniones";
+
+/*registrarse*/
+@import "page/registrarse";
+
+/*mediaQueries*/
+@import "mediaQueries/media"
+

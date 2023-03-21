@@ -1,0 +1,64 @@
+
+@media screen and (min-width: 576px){    
+    .profe .video-profe{
+        width: 360px;
+        height: 315px;
+        max-width: 100%;
+}
+}
+
+@media screen and (min-width: 768px){
+    footer .caja-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+    .labelkyinputk{
+        font-size: 1.9rem;
+    }
+    
+    .inputk{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link{
+        font-size: 30px;
+}
+    .navbar-nav{
+        align-items: start;
+}
+
+    .profe .video-profe{
+        width: 700px;
+        height: 394px;
+}
+    .container{
+        max-width: 75%;
+}
+    .frase-registrarse{
+        font-size: 4.5rem;
+}
+/*agrego animacion*/
+    .btn-outline-danger:hover{
+            transform: scale(2,2);}
+}
+
+
+@media screen and (min-width: 1200px){
+    h1{font-size: 4.5em;}
+    h2{font-size: 3.2em;}
+    h3{font-size: 2.8em;}
+    p{font-size: 2em;
+}
+    .nav-link{
+        font-size: 28px;
+}
+
+    .btn-outline-danger{
+        font-size: 1.5rem;
+    
+}
+}

@@ -1,334 +1,317 @@
+/*reset*/
 /*Fuente*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
 /*
 font-family: 'Dancing Script', cursive;
 font-family: 'Roboto', sans-serif;
 */
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
 }
 
-body{
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(70, 65, 65);
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: rgb(70, 65, 65);
 }
-h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.2em;}
-ul{list-style: none;
-padding: 0;}
-a{text-decoration: none;}
 
-.idenea{color: rgba(51, 216, 51, 0.89);}
-.fit{color: rgba(238, 44, 44, 0.719);}
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.idenea {
+  color: rgba(51, 216, 51, 0.89);
+}
+
+.fit {
+  color: rgba(238, 44, 44, 0.719);
+}
 
 /*comienza navbar*/
-.navbar{
-    font-size: 25px;
-    padding: 10px 15px;
+.navbar {
+  font-size: 25px;
+  padding: 10px 15px;
+}
+.navbar .navbar-nav {
+  align-items: start;
+}
+.navbar .navbar-nav .nav-link {
+  color: rgb(70, 65, 65);
+  font-size: 25px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: purple;
+  text-decoration: underline;
+  text-decoration-color: purple;
 }
 
-.navbar-nav{
-    align-items: start;
-
-}
-
-.nav-link{
-    color: rgb(70, 65, 65);
-    font-size: 25px;
-}
-
-.nav-link:hover{
-    color: purple;
-    text-decoration: underline;
-    text-decoration-color: purple;
-}
 /*finaliza navbar*/
-
 /*Hero*/
-.frase{   
-    text-align: center;
-    text-shadow: 5px 2px 3px rgb(56, 67, 167);
-    padding: 20px; 
-    height: 70vh;
-    
-    background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),
-    url(../recursos/imagenes/heroe-image.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.frase {
+  text-align: center;
+  text-shadow: 5px 2px 3px rgb(56, 67, 167);
+  padding: 20px;
+  height: 70vh;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.3), black), linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.2), black), url(../recursos/imagenes/heroe-image.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.frase h3 {
+  color: rgb(133, 130, 130);
+  text-align: start;
+  text-shadow: none;
 }
 
-.frase h3{
-    color: rgb(133, 130, 130);
-    text-align: start;
-    text-shadow: none;
-}
-
-
+/*section*/
 /*main*/
-.mainidea{
-    margin: 60px 0px;
+.mainidea {
+  margin: 60px 0px;
+}
+.mainidea .mainidea-cajas {
+  padding: 70px 10px;
+  text-align: center;
+  color: rgb(70, 65, 65);
 }
 
-.mainidea-cajas{
-    padding: 70px 10px;
-    text-align: center;
-    color: rgb(70, 65, 65);
+/*planes*/
+.planes {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
 }
-
-
-/*seccion planes*/
-.planes h2{
-    padding: 10px;
-    color:  rgba(235, 0, 0, 0.795);
-    text-shadow: 2px 2px 3px rgb(153, 9, 9);
+.planes h2 {
+  padding: 10px;
+  color: rgba(235, 0, 0, 0.795);
+  text-shadow: 2px 2px 3px rgb(153, 9, 9);
 }
-
-.planes{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
+.planes .plan {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.7), black), url(../recursos/imagenes/plan.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  max-width: 700px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 0;
 }
-
-.plan{
-    display: flex;
-    flex-direction: column;
-
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,1),
-        rgba(0,0,0,0.8)),
-    url(../recursos/imagenes/plan.jpg);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    height: 500px;
-    max-width: 700px;
-
-
-    margin-top: 50px;
-    text-align: center;
+.planes .plan .plan_tiempo {
+  display: flex;
+  justify-content: space-around;
 }
-.plan_tiempo{
-    display: flex;
-    justify-content: space-around;
+.planes .plan .plan_tiempo .button {
+  margin: 20px;
 }
-
-.button{
-    margin: 20px;
-}
-
-.btn-outline-danger{
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 1px 1px 3px;
+.planes .plan .plan_tiempo .btn-outline-danger {
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 1px 1px 3px;
+  transition: all 1.3s;
 }
 
 /*seccion profe, iframe youtube, flexbox*/
-.profe{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: rgb(70, 65, 65);
+.profe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(70, 65, 65);
 }
-
-.profe h2{
-    padding: 30px 0px 20px 0px;
-    margin: auto;
+.profe h2 {
+  padding: 30px 0px 20px 0px;
+  margin: auto;
 }
-
-.video-profe{
-    width: 390px;
-    height: 300px;
-    max-width: 100%;
+.profe .video-profe {
+  width: 350px;
+  height: 300px;
+  max-width: 100%;
 }
-
 
 /*seccion preguntas frecuentes*/
-.preguntas-frecuentes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-    margin-top: 40px;
+.preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
 }
-.accordion{
-    max-width: 600px;
+.preguntas-frecuentes .accordion {
+  max-width: 600px;
 }
-
 
 /*footer con gridd*/
 footer .caja-footer {
-    display: flex;
-    flex-direction: column;
-    
-
-    margin-top: 40px;
-    color: rgb(70, 65, 65);
-    border-top: 3px rgb(49, 53, 53) solid;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  color: rgb(70, 65, 65);
+  border-top: 3px rgb(49, 53, 53) solid;
+}
+footer .caja-footer .cajitas-footer {
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .caja-footer .cajitas-footer li {
+  font-size: 1.4em;
+}
+footer .caja-footer .cajitas-footer .redes {
+  padding-top: 15px;
+}
+footer .caja-footer .cajitas-footer .redes .caja__redes {
+  width: 40px;
+  height: 40px;
 }
 
-.cajitas-footer{
-    margin: 10px;
-    padding: 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+/*nuestra-vision*/
+.nuestra-vi {
+  font-weight: bold;
+  padding: 50px 40px;
+  max-width: 100%;
 }
-
-.cajitas-footer li{
-    font-size: 1.4em;
+.nuestra-vi .nuestra-imagen {
+  background-image: url(../recursos/imagenes/vision.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 160px;
+  max-width: 100%;
 }
-
-.redes{
-    padding-top: 15px;
-    
-}
-
-.caja__redes{
-    width: 40px;
-    height: 40px;
-}
-
 
 /*opiniones*/
-.opiniones-titulos{
-    text-align: center;
-    padding: 70px 30px;
+.opiniones-titulos {
+  text-align: center;
+  padding: 70px 30px;
 }
 
-.container{
-    padding: 50px 20px;
+.container {
+  padding: 50px 20px;
 }
-
-.card{
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
+.container .card {
+  margin: 20px;
+  box-shadow: 5px 5px 10px;
 }
-
-.card-text{
-    font-family: 'Dancing Script', cursive;
+.container .card .card-text {
+  font-family: "Dancing Script", cursive;
 }
 
 /*registrarse*/
-.registro{
-    padding: 15px 2px 10px 2px;
-    max-width: 100%;
+.registro {
+  padding: 15px 2px 10px 2px;
+  max-width: 100%;
 }
 
-.frase-registrarse{
-    font-size: 2.6rem;
+.frase-registrarse {
+  font-size: 2.6rem;
 }
 
-.labelkyinputk{
-    padding-top: 13px;
-    font-size: 1rem;
-    max-width: 100%;
+.labelkyinputk {
+  padding-top: 13px;
+  font-size: 1rem;
+  max-width: 100%;
 }
 
-.enviar-reset{
-    padding: 50px 0px;
+.enviar-reset {
+  padding: 50px 0px;
 }
 
-.inputk{
-    font-size: 0.9rem;
+.inputk {
+  font-size: 0.9rem;
 }
-
-
-/*nuestra-vision*/
-.nuestra-vi{
-    font-weight: bold;
-    padding: 50px 40px;
-    max-width: 100%;
-    
-}
-
-.nuestra-imagen{
-    background-image: url(../recursos/imagenes/vision.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 160px;
-    max-width: 100%;
-}
-
-
 
 /*mediaQueries*/
-@media screen and (min-width: 576px){    
-    .video-profe{
-        width: 360px;
-        height: 315px;
-        max-width: 100%;
+@media screen and (min-width: 576px) {
+  .profe .video-profe {
+    width: 360px;
+    height: 315px;
+    max-width: 100%;
+  }
 }
+@media screen and (min-width: 768px) {
+  footer .caja-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .labelkyinputk {
+    font-size: 1.9rem;
+  }
+  .inputk {
+    font-size: 1.4rem;
+  }
 }
-
-@media screen and (min-width: 768px){
-    footer .caja-footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    
-    .labelkyinputk{
-        font-size: 1.9rem;
-    }
-    
-    .inputk{
-        font-size: 1.4rem;
-    }
-}
-
 @media screen and (min-width: 992px) {
-    .nav-link{
-        font-size: 30px;
+  .nav-link {
+    font-size: 30px;
+  }
+  .navbar-nav {
+    align-items: start;
+  }
+  .profe .video-profe {
+    width: 700px;
+    height: 394px;
+  }
+  .container {
+    max-width: 75%;
+  }
+  .frase-registrarse {
+    font-size: 4.5rem;
+  }
+  /*agrego animacion*/
+  .btn-outline-danger:hover {
+    transform: scale(2, 2);
+  }
 }
-    .navbar-nav{
-        align-items: start;
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4.5em;
+  }
+  h2 {
+    font-size: 3.2em;
+  }
+  h3 {
+    font-size: 2.8em;
+  }
+  p {
+    font-size: 2em;
+  }
+  .nav-link {
+    font-size: 28px;
+  }
+  .btn-outline-danger {
+    font-size: 1.5rem;
+  }
 }
 
-    .video-profe{
-        width: 700px;
-        height: 394px;
-}
-    .container{
-        max-width: 75%;
-}
-    .frase-registrarse{
-        font-size: 4.5rem;
-}
-}
-
-
-@media screen and (min-width: 1200px){
-    h1{font-size: 4.5em;}
-    h2{font-size: 3.2em;}
-    h3{font-size: 2.8em;}
-    p{font-size: 2em;
-}
-    .nav-link{
-        font-size: 28px;
-}
-
-    .btn-outline-danger{
-        font-size: 1.5rem;
-    
-}
-}
-
-
+/*# sourceMappingURL=estilo.css.map */

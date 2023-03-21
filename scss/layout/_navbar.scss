@@ -1,0 +1,22 @@
+.navbar{
+    font-size: 25px;
+    padding: 10px 15px;
+
+    .navbar-nav{
+        align-items: start;
+
+        .nav-link{
+            color: rgb(70, 65, 65);
+            font-size: 25px;
+            &:hover{
+                color: purple;
+                text-decoration: underline;
+                text-decoration-color: purple;
+            }
+        }
+    }
+}
+
+
+
+

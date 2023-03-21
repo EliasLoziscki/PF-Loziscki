@@ -1,0 +1,18 @@
+
+.mainidea{
+    margin: 60px 0px;
+
+    .mainidea-cajas{
+        padding: 70px 10px;
+        text-align: center;
+        color: rgb(70, 65, 65);
+
+        .idenea{
+            @include textShadow(3px, rgb(56, 67, 167));
+        }
+
+        .fit{
+            @include textShadow(3px, rgb(56, 67, 167));
+        }
+    }
+}

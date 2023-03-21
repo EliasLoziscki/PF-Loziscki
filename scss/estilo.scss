@@ -1,31 +1,47 @@
 //variables
 @import "utilities/variables";
-
+//mixins
+@import "utilities/mixins";
 
 /*reset*/
 @import "base/reset";
+/*fim reset*/
 
-/*comienza navbar*/
+/*comienza navbar - uso de bootstrap*/
 @import "layout/navbar";
 /*finaliza navbar*/
 
-/*Hero*/
+/*import layout/header uso de boostrap-flex - mixins - gradiente*/
 @import "layout/header";
+/*fin import layout/header*/
 
-/*section*/
-@import "layout/section";
+/*main - import page/index*/
+@import "page/index";
+/*fin import page/index*/
 
-/*footer con gridd*/
-@import "layout/footer";
-
-/*nuestra-vision*/
+/*main - import page/nuestra-vision*/
 @import "page/nuestra-vision";
+/*fin import page/nuestra-vision*/
 
-/*opiniones*/
+/*main - import page/opiniones*/
 @import "page/opiniones";
+/*fin import page/opiniones*/
 
-/*registrarse*/
+/*main - import page/registrarse*/
 @import "page/registrarse";
+/*fin import page/registrarse*/
+
+/*import page/sedes - @extend*/
+@import "page/sedes";
+
+/*import layout/section - flexbox -iframe - bootstrap - mixins - gradiente*/
+@import "layout/section";
+/*fin import layout/section*/
+
+
+/*import layout/footer con gridd y flexbox*/
+@import "layout/footer";
+/*fin import layout/footer con gridd*/
 
 /*mediaQueries*/
 @import "mediaQueries/media"

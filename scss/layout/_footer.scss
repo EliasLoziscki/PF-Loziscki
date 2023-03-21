@@ -1,9 +1,10 @@
 footer .caja-footer {
     display: flex;
     flex-direction: column;
+/*en mediaQuerie pasa a display:grid*/
     margin-top: 40px;
     color: rgb(70, 65, 65);
-    border-top: 3px rgb(49, 53, 53) solid;
+    border-top: 3px $textColorPrincipal solid;
     
     .cajitas-footer{
         margin: 10px;
@@ -12,6 +13,15 @@ footer .caja-footer {
         display: flex;
         flex-direction: column;
         align-items: start;
+
+        .caja__sitio{
+            color: $textColorPrincipal;
+            &:hover{
+                color: $testColorSecondary;              
+                text-decoration-color: $testColorSecondary;
+                @include textShadow(2px, rgb(56, 67, 167));
+            }
+        }
 
         li{
             font-size: 1.4em;

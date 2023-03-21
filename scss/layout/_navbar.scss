@@ -1,17 +1,17 @@
 .navbar{
-    font-size: 25px;
+    font-size: $fountSizeH;
     padding: 10px 15px;
 
     .navbar-nav{
         align-items: start;
 
         .nav-link{
-            color: rgb(70, 65, 65);
-            font-size: 25px;
+            color: $textColorPrincipal;
+            font-size: $fountSizeH;
             &:hover{
-                color: purple;
-                text-decoration: underline;
-                text-decoration-color: purple;
+                color: $testColorSecondary;              
+                text-decoration-color: $testColorSecondary;
+                @include textShadow(2px, rgb(56, 67, 167));
             }
         }
     }

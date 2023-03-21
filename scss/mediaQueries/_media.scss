@@ -1,8 +1,7 @@
 
 @media screen and (min-width: 576px){    
     .profe .video-profe{
-        width: 360px;
-        height: 315px;
+        @include videoProfe(400px, 345px);
         max-width: 100%;
 }
 }
@@ -14,29 +13,27 @@
     }
 
     
-    .labelkyinputk{
+    .registro .labelkyinputk{
         font-size: 1.9rem;
     }
-    
-    .inputk{
+
+    .registro .labelkyinputk .inputk {
         font-size: 1.4rem;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .nav-link{
-        font-size: 30px;
-}
-    .navbar-nav{
-        align-items: start;
-}
-
-    .profe .video-profe{
-        width: 700px;
-        height: 394px;
-}
     .container{
         max-width: 75%;
+}
+    .navbar .navbar-nav .nav-link{
+        font-size: 30px;
+}
+    .navbar .navbar-nav{
+        align-items: start;
+}
+    .profe .video-profe{
+        @include videoProfe(700px, 400px);
 }
     .frase-registrarse{
         font-size: 4.5rem;
@@ -53,11 +50,8 @@
     h3{font-size: 2.8em;}
     p{font-size: 2em;
 }
-    .nav-link{
-        font-size: 28px;
-}
 
-    .btn-outline-danger{
+    .planes .plan .plan_tiempo .btn-outline-danger{
         font-size: 1.5rem;
     
 }

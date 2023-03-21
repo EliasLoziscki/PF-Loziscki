@@ -1,0 +1,14 @@
+@mixin back($bsize, $brepeat){
+    background-size: $bsize;
+    background-repeat: $brepeat;
+}
+
+@mixin textShadow($shadow-x, $scolor){
+    text-shadow: ($shadow-x 2px 3px $scolor);
+} 
+
+@mixin videoProfe($widthP, $heigthP){
+    width: $widthP;
+    height: $heigthP;
+}
+

@@ -5,10 +5,9 @@
 
     .nuestra-imagen{
         background-image: url(../recursos/imagenes/vision.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 300px;
-        height: 160px;
+/*2 mixin*/
+        @include back(contain, no-repeat);
+        @include videoProfe(300px, 160px);
         max-width: 100%;
     }
 }

@@ -11,9 +11,33 @@
 /*mixins*/
     @include back(cover, no-repeat);
 
+/*animate*/
+    .ani{
+        animation-name: zoomIn;
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+
     h3{
         color: $textColorPrincipal;
         text-align: start;
         text-shadow: none;
     }
 }
+
+/*animacion*/
+.ani-index{
+    animation-name: frase;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes frase{
+    0%{opacity: 0;}
+    25%{opacity: 0.2;}
+    75%{opacity: 0.4;}
+    100%{opacity: 1;}
+}
+

@@ -65,6 +65,28 @@ a {
   text-shadow: 2px 2px 3px rgb(56, 67, 167);
 }
 
+.nav-ani {
+  animation-name: nav-ani;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+@keyframes nav-ani {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*finaliza navbar*/
 /*import layout/header uso de boostrap-flex - mixins - gradiente*/
 .frase {
@@ -77,6 +99,12 @@ a {
   /*mixins*/
   background-size: cover;
   background-repeat: no-repeat;
+  /*animate*/
+}
+.frase .ani {
+  animation-name: zoomIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 .frase h3 {
   color: rgb(70, 65, 65);
@@ -84,6 +112,29 @@ a {
   text-shadow: none;
 }
 
+/*animacion*/
+.ani-index {
+  animation-name: frase;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+@keyframes frase {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*fin import layout/header*/
 /*main - import page/index*/
 .mainidea {
@@ -213,8 +264,10 @@ a {
   color: rgb(70, 65, 65);
 }
 .profe h2 {
+  font-size: 2rem;
   padding: 30px 0px 20px 0px;
-  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 .profe .video-profe {
   width: 350px;
@@ -230,6 +283,9 @@ a {
   align-items: center;
   padding: 20px;
   margin-top: 40px;
+}
+.preguntas-frecuentes h3 {
+  font-size: 1.8rem;
 }
 .preguntas-frecuentes .accordion {
   max-width: 600px;

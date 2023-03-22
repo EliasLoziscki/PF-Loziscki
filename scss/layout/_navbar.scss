@@ -17,6 +17,19 @@
     }
 }
 
+.nav-ani{
+    animation-name: nav-ani;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
 
+@keyframes nav-ani{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 

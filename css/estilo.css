@@ -47,7 +47,7 @@ a {
 }
 
 /*fim reset*/
-/*comienza navbar - uso de bootstrap*/
+/*comienza navbar - uso de bootstrap - animacion*/
 .navbar {
   font-size: 25px;
   padding: 10px 15px;
@@ -69,7 +69,7 @@ a {
   animation-name: nav-ani;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-duration: 4s;
+  animation-duration: 2.5s;
   animation-delay: 0s;
 }
 
@@ -88,7 +88,7 @@ a {
   }
 }
 /*finaliza navbar*/
-/*import layout/header uso de boostrap-flex - mixins - gradiente*/
+/*import layout/header uso de boostrap-flex - mixins - gradiente - animacion*/
 .frase {
   text-align: center;
   text-shadow: 5px 2px 3px rgb(56, 67, 167);
@@ -117,7 +117,7 @@ a {
   animation-name: frase;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-delay: 0s;
 }
 
@@ -213,7 +213,7 @@ a {
 /*fin import page/registrarse*/
 /*import page/sedes - @extend*/
 /*import layout/section - flexbox -iframe - bootstrap - mixins - gradiente*/
-/*planes*/
+/*seccion planes*/
 .planes {
   display: flex;
   justify-content: center;
@@ -275,7 +275,7 @@ a {
   max-width: 100%;
 }
 
-/*seccion preguntas frecuentes*/
+/*seccion preguntas frecuentes - bootstrap accordion*/
 .preguntas-frecuentes {
   display: flex;
   flex-direction: column;
@@ -368,7 +368,7 @@ footer .caja-footer .cajitas-footer .redes .caja__redes {
   }
   /*agrego animacion*/
   .btn-outline-danger:hover {
-    transform: scale(2, 2);
+    transform: scale(1.2, 1.2);
   }
 }
 @media screen and (min-width: 1200px) {
